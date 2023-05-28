@@ -13,7 +13,7 @@ def relation_between_files(list_of_sub_files):
     return relationships
 
 
-def find_closest(key, list_of_keys):
+def find_closest_number(key, list_of_keys):
 
     closest_number = None
     minimum_difference = float('inf')
@@ -23,7 +23,6 @@ def find_closest(key, list_of_keys):
         if difference < minimum_difference:
             minimum_difference = difference
             closest_number = num
-    print("Closest Number:", closest_number)
     return closest_number
 
 def relation_between_texts(eng, pt):
@@ -34,7 +33,7 @@ def relation_between_texts(eng, pt):
     
     for pt_key, pt_text in pt.items():
         pt_key = int(pt_key[:-1])
-        eng_key = find_closest(pt_key, eng_key_list)
+        eng_key = find_closest_number(pt_key, eng_key_list)
         final_relation.append((pt_text, eng[str(eng_key) + "t"]))
     print(final_relation)
     return final_relation
