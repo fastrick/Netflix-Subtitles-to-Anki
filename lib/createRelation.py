@@ -34,6 +34,6 @@ def relation_between_texts(eng, pt):
     for pt_key, pt_text in pt.items():
         pt_key = int(pt_key[:-1])
         eng_key = find_closest_number(pt_key, eng_key_list)
-        final_relation.append((pt_text, eng[str(eng_key) + "t"]))
+        final_relation.append([pt_text, eng[str(eng_key) + "t"]])
     print(final_relation)
     return final_relation

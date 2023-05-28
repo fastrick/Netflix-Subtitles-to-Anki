@@ -2,6 +2,7 @@ import os
 import inquirer
 from lib.createRelation import relation_between_files, relation_between_texts 
 from lib.getText import get_text_from_xml
+from lib.gen_anki import generate_anki_deck
 folder_path = '/root/main/Subtitles/Better Call Saul'
 
 # List all files in the folder
@@ -29,8 +30,6 @@ for rel in relational_files:
     eng = get_text_from_xml(f"{folder_path}/{selected_folder}/{relational_files[rel][0]}")
     pt = get_text_from_xml(f"{folder_path}/{selected_folder}/{relational_files[rel][1]}")
     rela = relation_between_texts(eng, pt)
-    if len(rela) < 30:
-        print(f"N texts: {len(rela)} {sub0} and {sub1} are not the same")
-        print(rela)
+    generate_anki_deck(rela, selected_folder, rel)
     #subtitle = get_text_from_xml(f"{folder_path}/{selected_folder}/{relational_files[rel][1]}")
     #print(subtitle)
