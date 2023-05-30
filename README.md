@@ -15,12 +15,12 @@ To use this script, follow the steps below:
   ```
   /Subtitles
   ├── Movie or Series Name
-  │   ├── Season 1
+  │   ├── S01
   │   │   ├── E01-pt.xml
   │   │   ├── E01-en.xml
   │   │   ├── E02-pt.xml
   │   │   └── E02-en.xml
-  │   ├── Season 2
+  │   ├── S02
   │   │   ├── E01-pt.xml
   │   │   ├── E01-en.xml
   │   │   ├── E02-pt.xml
