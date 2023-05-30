@@ -47,9 +47,9 @@ To use this script, follow the steps below:
 
 ### Step 4: Importing Flashcards to Anki
 
-- Once the script has finished processing, it will create an output file named `flashcards.txt`.
+- Once the script has finished processing, it will create an output file with of each episode like that `name_series_S0x_E0y.apkg` inside the `output` folder.
 - Open Anki, create a new deck, and go to "File" -> "Import" to import the flashcards.
-- Select the `flashcards.txt` file and follow the prompts to import the flashcards into Anki.
+- Select the `.apkg` file and follow the prompts to import the flashcards into Anki.
 
 ## How It Works
 
