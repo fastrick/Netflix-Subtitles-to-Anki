@@ -26,5 +26,5 @@ def generate_anki_deck(list_of_texts, season, episode):
       fields=eng_and_pt)
 
     my_deck.add_note(my_note)
-  genanki.Package(my_deck).write_to_file(f"Better Call Saul {season} {episode}.apkg")
+  genanki.Package(my_deck).write_to_file(f"/root/main/output/Better Call Saul {season} {episode}.apkg")
   
