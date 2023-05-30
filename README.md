@@ -68,10 +68,6 @@ Feel free to customize the script or contribute to this repository to enhance it
 - The timing accuracy of the generated flashcards depends on the accuracy of the subtitle timings.
 - Non-standard subtitle formats may not be compatible with this script.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE.md). Feel free to modify and distribute it as per the terms of the license.
-
 ## Acknowledgments
 
 Special thanks to contributors and open-source projects that inspired and helped improve this script.
